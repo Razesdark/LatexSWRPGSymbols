@@ -1,0 +1,20 @@
+\newcommand{\doicon}[2]{\foreach \x in {1,...,#1}{\includegraphics[scale=0.60]{#2}}}
+\newcommand{\doiconbig}[2]{\foreach \x in {1,...,#1}{\includegraphics[scale=0.275]{#2}}}
+\newcommand{\dability}[1]{\ifthenelse{#1=0}{}{\doicon{#1}{icons/dice_ability.png}}{}}
+\newcommand{\dproficiency}[1]{\ifthenelse{#1=0}{}{\doicon{#1}{icons/dice_prof.png}}{}}
+\newcommand{\ddifficulty}[1]{\ifthenelse{#1=0}{}{\doicon{#1}{icons/dice_difficulty.png}}{}}
+\newcommand{\dchallenge}[1]{\ifthenelse{#1=0}{}{\doicon{#1}{icons/dice_challenge.png}}{}}
+\newcommand{\dboost}[1]{\ifthenelse{#1=0}{}{\doicon{#1}{icons/dice_boost.png}}{}}
+\newcommand{\dsetback}[1]{\ifthenelse{#1=0}{}{\doicon{#1}{icons/dice_setback.png}}{}}
+\newcommand{\dforce}[1]{\ifthenelse{#1=0}{}{\doicon{#1}{icons/dice_force.png}}{}}
+\newcommand{\success}[1]{\ifthenelse{#1=0}{}{\doiconbig{#1}{icons/sym_success.png}}{}}
+\newcommand{\triump}[1]{\ifthenelse{#1=0}{}{\doiconbig{#1}{icons/sym_triumph.png}}{}}
+\newcommand{\triumph}[1]{\triump{#1}}
+\newcommand{\advantage}[1]{\ifthenelse{#1=0}{}{\doiconbig{#1}{icons/sym_advantage.png}}{}}
+\newcommand{\failure}[1]{\ifthenelse{#1=0}{}{\doiconbig{#1}{icons/sym_failure.png}}{}}
+\newcommand{\despair}[1]{\ifthenelse{#1=0}{}{\doiconbig{#1}{icons/sym_despair.png}}{}}
+\newcommand{\threat}[1]{\ifthenelse{#1=0}{}{\doiconbig{#1}{icons/sym_threat.png}}{}}
+\newcommand{\dhun}{$D^{100}$}
+\newkeycommand\skillcheck[ability=0,proficiency=0,difficulty=0,challenge=0,boost=0,setback=0,force=0][2]{
+	\textbf{\mbox{#1 (\dability{\commandkey{ability}}\dproficiency{\commandkey{proficiency}}\ddifficulty{\commandkey{difficulty}}\dchallenge{\commandkey{challenge}}\dboost{\commandkey{boost}}\dsetback{\commandkey{setback}}\dforce{\commandkey{force}})} #2}
+}
