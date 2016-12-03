@@ -32,3 +32,14 @@ __The currently supported other symbols__
 * ``\threat{n}`` - ![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/sym_threat.png?raw=true)
 * ``\triumph{n}`` - ![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/sym_triumph.png?raw=true)
 * ``\despair{n}`` - ![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/sym_despair.png?raw=true)
+
+# The skillcheck command
+The skillcheck command is a way to quickly add skillchecks to the document. For example, if you want to add an medium _computer check_. You can do that with the command ``\skillcheck[difficulty=2]{Medium}{computer check}``. That will add the text  
+
+__Medium(![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/dice_difficulty.png?raw=true)![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/dice_difficulty.png?raw=true)) computer check__
+
+to your document, in line with many of the skillchecks listed in the core rule book. 
+You can mix and match several types of dice, for example an opposed charm check  ``\skillcheck[difficulty=1,challenge=2,setback=1]{Opposed}{charm check}`` which would look like this:
+
+__Opposed(![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/dice_difficulty.png?raw=true)![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/dice_challenge.png?raw=true)![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/dice_challenge.png?raw=true)![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/dice_setback.png?raw=true)) charm check__
+
