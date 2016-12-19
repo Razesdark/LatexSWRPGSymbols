@@ -22,7 +22,7 @@ __The currently supported dices__
   * ``\dboost{n}`` - ![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/dice_boost.png?raw=true)
   * ``\dsetback{n}`` - ![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/dice_setback.png?raw=true)
   * ``\dforce{n}`` - ![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/dice_force.png?raw=true)
-  
+  * ``\dforce{n}`` - ![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/dice_force.png?raw=true)  
   For example, if you want to show 3 dice (![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/dice_ability.png?raw=true)![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/dice_ability.png?raw=true)![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/dice_ability.png?raw=true)) can be added using the command ``\dability{3}``.
 
 __The currently supported other symbols__
@@ -32,6 +32,9 @@ __The currently supported other symbols__
 * ``\threat{n}`` - ![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/sym_threat.png?raw=true)
 * ``\triumph{n}`` - ![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/sym_triumph.png?raw=true)
 * ``\despair{n}`` - ![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/sym_despair.png?raw=true)
+* ``\lforce{n}`` - ![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/sym_lightforce.png?raw=true)
+* ``\dforce{n}`` - ![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/sym_darkforce.png?raw=true)
+
 
 # The skillcheck command
 The skillcheck command is a way to quickly add skillchecks to the document. For example, if you want to add an medium _computer check_. You can do that with the command ``\skillcheck[difficulty=2]{Medium}{computer check}``. That will add the text  
@@ -43,3 +46,11 @@ You can mix and match several types of dice, for example an opposed charm check 
 
 __Opposed(![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/dice_difficulty.png?raw=true)![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/dice_challenge.png?raw=true)![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/dice_challenge.png?raw=true)![Ability](https://github.com/Razesdark/LatexSWRPGSymbols/blob/master/icons/dice_setback.png?raw=true)) charm check__
 
+# Stats
+I also added some macros that I use in character creation for stats. They require the packages
+
+```
+\usepackage{tikz}
+\usepackage{ifthen}
+\usepackage{keycommand}
+```
