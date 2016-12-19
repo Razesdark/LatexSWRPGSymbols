@@ -1,0 +1,119 @@
+% /$$$$$$$  /$$                                        
+%| $$__  $$  | $$                                        
+%| $$  \ $$   | $$   /$$$$$$  /$$   /$$  /$$$$$$   /$$$$$$ 
+%| $$$$$$$/| $$|  ____  $$| $$  | $$ /$$__  $$   /$$__  $$
+%| $$____/ | $$  /$$$$$$$| $$  | $$| $$$$$$$$  | $$  \__/
+%| $$           | $$ /$$__  $$| $$  | $$| $$_____/   | $$      
+%| $$           | $$|  $$$$$$$|  $$$$$$$|  $$$$$$$| $$      
+%|__/          |__/ \_______/ \____  $$ \_____/|__/      
+%                                            /$$  | $$                    
+%                                        |  $$$$$$/                    
+%                                        \______/                     
+%
+
+
+\newcommand{\stats}[6]{
+	\begin{center}
+		\begin{tabular}{ | c | c | c | c | c | c | c | } \hline
+			\textbf{Brwn} & \textbf{Agi} & \textbf{Int} & \textbf{Cun} & \textbf{Will} & \textbf{Pres} \\ \hline
+			#1    & #2   & #3   & #4   & #5    & #6    \\ \hline
+		\end{tabular} 
+		\\[1em]
+\end{center} 
+}
+\newkeycommand{\secondarystats}[wound=0, strain=0, soak=0, mdef=0, rdef=0]{
+	\begin{center}
+		\begin{tabular}{ | c | c | c | c | c | } \hline
+		\tiny Wound Threshold & 
+		\tiny Strain Threshold &
+		\tiny Soak Value & 
+		\tiny Melee Def & 
+		\tiny Ranged Def \\[0.5em]
+		\textbf{\commandkey{wound}} & 
+		\textbf{\commandkey{strain}} & 
+		\textbf{\commandkey{soak}} &
+		\textbf{\commandkey{mdef}} &
+		\textbf{\commandkey{rdef}}
+		\\[0.05in] \hline
+	\end{tabular}
+	\end{center}
+}
+% /$$   /$$                /$$            /$$                 /$$                    
+%| $$   | $$                | $$            |__/                 | $$                    
+%| $$   | $$ /$$$$$$ | $$$$$$$  /$$  /$$$$$$$| $$  /$$$$$$   /$$$$$$$
+%|  $$ / $$//$$__  $$| $$__  $$| $$ /$$_____/| $$ /$$__  $$ /$$_____/
+% \  $$ $$/| $$$$$$$$| $$  \ $$| $$| $$            | $$| $$$$$$$$|  $$$$$$ 
+%  \  $$$/ | $$_____/| $$    | $$| $$| $$            | $$| $$_____/ \____  $$
+%   \  $/  |  $$$$$$$  | $$     | $$| $$|  $$$$$$$| $$|  $$$$$$$ /$$$$$$$/
+%    \_/    \_______/|__/  |__/|__/ \_______/|__/ \_______/|_______/ 
+\newkeycommand{\vehiclestats}[silhouette=0, speed=0, handling=0, armor=0, ht=0, ss=0]{
+	\begin{center}
+		\begin{tabular}{ |c|c|c| | c | c | c | } \hline
+			\tiny Silhouette &
+			\tiny Speed &
+			\tiny Handling &
+			\tiny Armor &
+			\tiny HT Threshold &
+			\tiny SS Threshold \\[0.25em]
+			\textbf{\commandkey{silhouette}} &
+			\textbf{\commandkey{speed}} &
+			\textbf{\commandkey{handling}} &
+			\textbf{\commandkey{armor}} &
+			\textbf{\commandkey{ht}} &
+			\textbf{\commandkey{ss}} \\ \hline
+		\end{tabular}
+		\\[1em]
+	\end{center}	
+}
+\newkeycommand{\vehicledefense}[fore=0, aft=0, starboard=0, port=0]{
+	\begin{center}
+		\footnotesize \textbf{Defense} \\
+		\begin{tabular}{ |c|c|c|c| } \hline
+			\tiny Fore &
+			\tiny Port &
+			\tiny Strb &
+			\tiny Aft \\[0.25em]
+			\textbf{\commandkey{fore}} &
+			\textbf{\commandkey{port}} &
+			\textbf{\commandkey{starboard}} &
+			\textbf{\commandkey{port}} \\ \hline
+		\end{tabular}
+		\\[1em]
+	\end{center}
+}
+%  /$$$$$$   /$$                         /$$             
+% /$$__  $$ | $$                          | $$             
+%| $$  \__//$$$$$$    /$$$$$$  /$$$$$$   /$$$$$$$
+%|  $$$$$$|_  $$_/   |____  $$|_  $$_/      /$$_____/
+% \____  $$ | $$      /$$$$$$$  | $$          |  $$$$$$ 
+% /$$  \ $$ | $$ /$$ /$$__  $$  | $$         /$$\____ $$
+%|  $$$$$$/ |  $$$$/|  $$$$$$$  |  $$$$/   /$$$$$$$/
+% \______/   \___/   \_______/   \___/ |_______/ 
+
+\newcommand{\statsgrid}[1]{
+\begin{center}
+	\begin{tabular}{ r l }
+		#1
+	\end{tabular}
+	\\[1em]
+\end{center}	 
+}
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
+\newcommand{\statentry}[2]{
+	\textbf{#1} & \begin{footnotesize}\specialcell{#2}\end{footnotesize} \\ 
+}
+\newcommand{\skentry}[2]{\footnotesize \textbf{#1} #2 \\}
+\newcommand{\equipmententry}[2]{
+	\textbf{#1} \\
+	\begin{footnotesize}\specialcell{#2}\end{footnotesize}\\
+}
+%  /$$$$$$$$ /$$$$$$$$ /$$$$$$    
+% | $$_____/|__  $$__/   /$$__  $$   
+% | $$                | $$         | $$  \__/   
+% | $$$$$          | $$         | $$        
+% | $$__/           | $$        | $$         
+% | $$                | $$         | $$    $$   
+% | $$$$$$$$   | $$          |  $$$$$$//$$
+% |________/   |__/         \______/|__/
+\newcommand{\degrees}{\textsuperscript{o}}
