@@ -1,0 +1,13 @@
+\newenvironment{swblackbox}{
+\tcbset{colback=black!5!black,colframe=black!75!black,
+arc=5mm, sharp corners=downhill, fontupper=\color{white}}
+	\begin{tcolorbox}[arc is angular]
+}{
+\end{tcolorbox}
+}
+\newenvironment{swredbox}{
+	\tcbset{colback=red!5!white,colframe=red!75!black}
+	\begin{tcolorbox}[rightrule=3mm]
+	}{
+	\end{tcolorbox}
+}

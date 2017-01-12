@@ -1,0 +1,51 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{swrpg}
+\usepackage{lipsum}
+
+
+\begin{document}
+\thispagestyle{empty}
+
+
+\swfrontpage[scale=1.5]{images/cp.jpg}
+
+\tableofcontents
+\newpage
+
+\begin{multicols}{2}
+\section{Header 1}
+\lipsum
+\subsection{Header 2}
+\lipsum[1]
+
+\subsubsection{Test}
+\lipsum[1]
+
+\stats{1}{2}{3}{4}{5}{6}
+\secondarystats[wound=10, strain=20, soak=1, mdef=2, rdef=3]
+\lipsum[1]
+\end{multicols}
+\lipsum[2]
+\begin{multicols}{2}
+\lipsum[1]
+\begin{swtable} 
+	\textbf{Header 1} & \textbf{Header 2} \\ 
+	test & best \\
+	kake & bake \\
+\end{swtable}
+\begin{swblackbox}
+\lipsum[1]
+\end{swblackbox}
+\end{multicols} \success{1} 
+
+\section{A new hope}
+\begin{multicols}{2}
+\lipsum[2] \skillcheck[difficulty=2]{Simple}{Window Check} \lipsum[2]
+\end{multicols}
+\begin{swredbox}
+\lipsum[2]
+\end{swredbox}
+\end{document}

@@ -1,0 +1,17 @@
+\usepackage[absolute, overlay]{textpos}
+\newkeycommand{\swfrontpage}[scale=1.0][1]{
+\begin{textblock}{20}(-0.4,5.5)
+	\includegraphics[width=1.1\paperwidth]{#1}
+\end{textblock}
+
+\begin{textblock}{20}(-0.4, 0)
+	\includegraphics[width=\paperwidth]{images/front_page_top.png}
+\end{textblock}
+
+\begin{textblock}{20}(-0.4, 13)
+	\includegraphics[width=\paperwidth]{images/front_page_bottom.png}
+\end{textblock}
+
+.
+\newpage
+}
