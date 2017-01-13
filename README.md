@@ -49,35 +49,6 @@ The odd and even backgrounds used are ``images/bf_odd.jpg`` and ``images/bg_even
 # Stats
 I also added some macros that I use in character creation for stats. ``\stats{STR}{AGI}{INT}{CUN}{WILL}{PRES}`` and ``\secondarystats[soak=,wound=,strain=,mdef=,rdef=]``. 
 
-I also made some simple macros for a skill grid. Here is an example on how it is used 
-``
-\statsgrid{
- 	\hline
- 	\statentry{Skills}{
-		\skentry{Brawl}{+3}
-		\skentry{Resilience}{+4}
-		\skentry{Perception}{+2} 
-		\skentry{Survival}{+2}	
- 	}
- 	\hline
- 		\statentry{Talents}{\skentry{Adversary}{1}}
- 	\hline
- 		\statentry{Abilities}{
- 			\equipmententry{Flamebreath}{Described below}
- 			\equipmententry{Screech}{Described below}
- 			\equipmententry{Immolation Aura}{Described Below}
- 		}
- 		
- 	\hline
- 	\statentry{Equipment}{
-		\equipmententry{Teeth}{Brawl; Engaged \\ Dmg: 6; Crit; 3; Stun 1}
-		\equipmententry{Feelers}{Ranged(Light); Medium \\ Dmg: 3, Crit: 3; Poison 1}
-		\equipmententry{Flamebreath}{Ranged(Light); Medium \\ Dmg: 8, Crit: 4; Limited Ammo 1}
- 	}
- 	\hline
- }
-``
-
 The ``\statsgrid{}`` holds all the data in the table. Each entry in the table should be an ``\statentry{Name}{Data}`` and if you need to list things within the statentry you can either use ``\equipmententry{Name}{Data}`` or ``\skentry{Name}{Data}``. 
 ``\equipmententry`` will let Name be bolded, and put Data on the next line, whilst ``skentry`` will be smaller text and on one line. So its mostly useful for skills.
 
